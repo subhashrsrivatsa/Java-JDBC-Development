@@ -11,7 +11,7 @@ public class TestManageDBResource {
 			conn = DBUtil.getConnection(DBType.MySQL);
 			System.out.println("\nThe connection was successful ");
 			stmt = conn.createStatement();
-			rs = stmt.executeQuery("select * from record");
+			rs = stmt.executeQuery("select * from url_only");
 			rs.last();
 			System.out.println("Rows : "+rs.getRow());
 		} catch (SQLException e) {

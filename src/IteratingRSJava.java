@@ -11,7 +11,7 @@ public class IteratingRSJava {
 		try {
 			conn = DBUtil.getConnection(DBType.MySQL);
 			stmt = conn.createStatement();
-			rs = stmt.executeQuery("select * from record ");
+			rs = stmt.executeQuery("select url from record ");
 			
 			//String format = "%-4d%-10s%-55s\n";
 			
